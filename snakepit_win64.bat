@@ -6,13 +6,13 @@ conda create -n snakepit python=3.5 --y
 call activate snakepit
 
 pip install --upgrade tensorflow
-:: Install keras 2.0.2 see 
-:: use " anaconda search -t conda keras " to find other versions
+:: use " anaconda search -t conda <package> " to find other versions
 pip install scikit-learn
 pip install matplotlib
 pip install jupyter
+conda install --channel https://conda.anaconda.org/conda-forge keras
 
-
+: Make a windows desktop shortcut
 @echo off
 
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
